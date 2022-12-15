@@ -6,7 +6,12 @@
                         <?php  echo form_open('Visiteur/se_connecter') ?>
                         <br>
                             <h3 class="text-center text-primary"><?php echo $TitreDeLaPage ?></h3>
-                            <?PHP if($TitreDeLaPage=='Corriger votre formulaire') echo service('validation')->listErrors(); ?>
+                            <?PHP if($TitreDeLaPage=='Corriger votre formulaire'){
+                                echo service('validation')->getError('txtEmail');
+                                if(service('validation')->getError('txtEmail'=='')){
+                                    echo service('validation')->getError('txtMdp');
+                                }
+                            }?>
                             <div>
                                 <label for="txtEmail" class="text-primary">Email</label><br>
                                 <input class="form-control" type="input" name="txtEmail" value="<?php echo set_value('txtEmail'); ?>" />
