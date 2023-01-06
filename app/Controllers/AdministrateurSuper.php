@@ -53,9 +53,9 @@ class AdministrateurSuper extends BaseController
                 // }
                 
             }
-            echo view('templates/header', $data);
-            echo view('AdministrateurSuper/ajouter_un_produit');
-            echo view('templates/footer');
+            return view('templates/header', $data) .
+            view('AdministrateurSuper/ajouter_un_produit') .
+            view('templates/footer');
         } else // si formulaire valide
         {
 
@@ -154,9 +154,9 @@ class AdministrateurSuper extends BaseController
             $data['txtQuantite'] = $produit['QUANTITEENSTOCK'];
             $data['vitrine'] = $produit['VITRINE'];
             
-            echo view('templates/header', $data);
-            echo view('AdministrateurSuper/modifier_produit');
-            echo view('templates/footer');
+            return view('templates/header', $data) .
+            view('AdministrateurSuper/modifier_produit') .
+            view('templates/footer');
         } else {
 
             $donneesAInserer = array(
@@ -196,9 +196,9 @@ class AdministrateurSuper extends BaseController
         if (!$this->validate($rules)) {
             $modelCat = new ModeleCategorie();
             $data['categories'] = $modelCat->retourner_categories();
-            echo view('templates/header', $data);
-            echo view('AdministrateurSuper/modifier_identifiants_bancaires_site');
-            echo view('templates/footer');
+            return view('templates/header', $data) .
+            view('AdministrateurSuper/modifier_identifiants_bancaires_site') .
+            view('templates/footer');
         } else {
 
             $donneesAInserer = array(

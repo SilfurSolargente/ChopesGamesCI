@@ -9,7 +9,7 @@ if ($session->has('cart')) {
 <head>
     <title>ChopesGames</title>
     <meta charset="utf-8">
-    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url() . 'assets/images/favicon.ico' ?>">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('assets/images/favicon.ico')?>">
     <link rel="alternate" type="application/rss+XML" title="ChopesGames" href="<?php echo site_url('AdministrateurSuper/flux_rss') ?>" />
 
     <link rel="stylesheet" href="<?= css_url('bootstrap.min') ?>">
@@ -26,7 +26,7 @@ if ($session->has('cart')) {
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
             <a class="navbar-brand" href="<?php echo site_url('Visiteur/accueil') ?>">
-                <img class="d-block" style="width:60px;height:38px;'" src="<?= base_url() . '/assets/images/logo.jpg' ?>" alt="Logo">
+                <img class="d-block" style="width:60px;height:38px;'" src="<?= base_url('/assets/images/logo.jpg') ?>" alt="Logo">
             </a>
             <ul class="navbar-nav mr-auto">
 

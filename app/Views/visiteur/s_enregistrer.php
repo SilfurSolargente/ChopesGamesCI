@@ -29,6 +29,9 @@
 
                                 <label for="txtMdp" class="text-primary">Mot de passe</label><br>
                                 <input class="form-control" type="password" name="txtMdp" id="mdp" value="<?php echo set_value('txtMdp'); ?>" />
+
+                                <label for="txtMdpVerif" class="text-primary">Confirmation de mot de passe</label><br>
+                                <input class="form-control" type="password" name="txtMdpVerif" id="mdpVerif" value="<?php echo set_value('txtMdpVerif'); ?>" />
                                 
                                 
                             <input type="submit" name="submit" class="btn btn-primary btn-md" value="Valider">

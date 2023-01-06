@@ -16,9 +16,9 @@ class AdministrateurEmploye extends BaseController
         $data['clients'] = $modelCli->retourner_clients();
         $modelCat = new ModeleCategorie();
         $data['categories'] = $modelCat->retourner_categories();
-        echo view('templates/header', $data);
-        echo view('AdministrateurEmploye/afficher_les_clients');
-        echo view('templates/footer');
+        return view('templates/header', $data) .
+        view('AdministrateurEmploye/afficher_les_clients') .
+        view('templates/footer');
     }
 
     public function historique_des_commandes($noclient = null)
@@ -32,9 +32,9 @@ class AdministrateurEmploye extends BaseController
         $data['commandes'] = $modelComm->retourner_commandes_client($noclient);
         $modelCat = new ModeleCategorie();
         $data['categories'] = $modelCat->retourner_categories();
-        echo view('templates/header', $data);
-        echo view('AdministrateurEmploye/historique_des_commandes');
-        echo view('templates/footer');
+        return view('templates/header', $data) .
+        view('AdministrateurEmploye/historique_des_commandes') .
+        view('templates/footer');
     }
 
     public function details_commande($noCommande = false)
@@ -48,8 +48,8 @@ class AdministrateurEmploye extends BaseController
         $data['lignes'] = $modelLig->retourner_lignes($noCommande);
         $modelCat = new ModeleCategorie();
         $data['categories'] = $modelCat->retourner_categories();
-        echo view('templates/header', $data);
-        echo view('AdministrateurEmploye/details_commande');
-        echo view('templates/footer');
+        return view('templates/header', $data) .
+        view('AdministrateurEmploye/details_commande') .
+        view('templates/footer');
     }
 }

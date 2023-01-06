@@ -174,9 +174,9 @@ ET PROBLEME AVEC IDENTIFIANT SITE SYSTEMATIQUE ! ! !
         $modelCat = new ModeleCategorie();
         $DonneesInjectees['categories'] = $modelCat->retourner_categories();
 
-        echo view('templates/header', $DonneesInjectees);
-        echo view('Client/validation_commande');
-        echo view('templates/footer');
+        return view('templates/header', $DonneesInjectees) .
+        view('Client/validation_commande') .
+        view('templates/footer');
     }
 
     function paiement_refuse() // simple redirection
@@ -528,9 +528,9 @@ ET PROBLEME AVEC IDENTIFIANT SITE SYSTEMATIQUE ! ! !
         $DonneesInjectees['commandes'] = $modelComm->retourner_commandes_client($session->get('id'));
         $modelCat = new ModeleCategorie();
         $DonneesInjectees['categories'] = $modelCat->retourner_categories();
-        echo view('templates/header', $DonneesInjectees);
-        echo view('Client/historique_des_commandes');
-        echo view('templates/footer');
+        return view('templates/header', $DonneesInjectees) .
+        view('Client/historique_des_commandes') .
+        view('templates/footer');
     }
 
     public function details_commande($nocommande = false)
@@ -544,8 +544,8 @@ ET PROBLEME AVEC IDENTIFIANT SITE SYSTEMATIQUE ! ! !
         $DonneesInjectees['lignes'] = $modelLig->retourner_lignes($nocommande);
         $modelCat = new ModeleCategorie();
         $DonneesInjectees['categories'] = $modelCat->retourner_categories();
-        echo view('templates/header', $DonneesInjectees);
-        echo view('Client/details_commande');
-        echo view('templates/footer');
+        return view('templates/header', $DonneesInjectees) .
+        view('Client/details_commande') .
+        view('templates/footer');
     }
 }

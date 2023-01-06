@@ -1,0 +1,8 @@
+CRITICAL - 2023-01-05 03:20:45 --> syntax error, unexpected token "return"
+#0 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('Visiteur/accuei...')
+#1 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('Visiteur/accuei...')
+#2 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#6 {main}
