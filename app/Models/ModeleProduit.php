@@ -46,4 +46,15 @@ class ModeleProduit extends Model
     {
         return $this->where(['NOCATEGORIE' => $categorie]);
     }
+
+    public function retournerSlug($id)
+    {
+    return $this->select('NOMIMAGE')->where(['NOPRODUIT' => $id])->first();
+    }
+
+    public function retournerId($slug)
+    {
+    return $this->select('NOPRODUIT')->where(['NOMIMAGE' => $slug])->first();
+    }
+
 }

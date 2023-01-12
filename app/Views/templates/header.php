@@ -14,7 +14,6 @@ if ($session->has('cart')) {
 
     <link rel="stylesheet" href="<?= css_url('bootstrap.min') ?>">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <script src=<?= js_url('bootstrap.min') ?>></script>
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
@@ -35,7 +34,7 @@ if ($session->has('cart')) {
                 </li>
 
                 <li class="nav-item">
-                    <a class="btn btn-primary" href="<?= site_url('Visiteur/lister_les_produits') ?>">Lister tous les Produits</a>
+                    <a class="btn btn-primary" href="<?= site_url('Visiteur/lister_les_produits') ?>">Afficher tous les Jeux</a>
                 </li>
 
             </ul>
@@ -98,7 +97,7 @@ if ($session->has('cart')) {
 
 
                 <li class="nav-item dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
                         Mon compte
                     </button>
                     <div class="dropdown-menu">

@@ -422,7 +422,29 @@ class Visiteur extends BaseController
                 $data['TitreDeLaPage'] = 'Identifiant incorrect';
                 return view('visiteur/connexion_administrateur', $data);
             }
-            return view('templates/footer');
+            return view('templates/footer') .
+            view('visiteur/connexion_administrateur', $data).
+            view('templates/footer');
         }
     }
+    public function prodById(int $id){
+        $modelProd = new ModeleProduit();
+        $slug= $modelProd->retournerSlug($id);
+    //redirection   
+        if ($slug != null){ 
+        return redirect()->to('jeux/'.$slug['NOMIMAGE']);
+        }
+    //else redirect 404 adaptée ?
+      }
+      
+public function prodBySlug($slug){
+        $modelProd = new ModeleProduit();
+        $id= $modelProd->retournerId($slug);
+    //pas de redirection mais invocation de la méthode déjà programmée     
+        if ($id != null){ 
+        return $this->voir_un_produit($id);
+        }
+    //else redirect 404 adaptée ?
+      }
+
 }

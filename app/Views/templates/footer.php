@@ -28,6 +28,7 @@
         
         </div>
 </nav>
+<script src=<?= js_url('bootstrap.min') ?>></script>
 </body>
 
 </html>

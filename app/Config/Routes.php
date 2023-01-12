@@ -17,10 +17,10 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
-$routes->setDefaultMethod('index');
+$routes->setDefaultController('Visiteur');
+$routes->setDefaultMethod('accueil');
 $routes->setTranslateURIDashes(false);
-//$routes->set404Override();
+// $routes->set404Override();
 // Would execute the show404 method of the App\Errors class
 $routes->set404Override(function( $message = null )
 {
@@ -40,7 +40,9 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Visiteur::accueil');
+$routes->get('Visiteur/voir_un_produit/(:num)', 'Visiteur::prodById/$1');
+$routes->get('jeux/(:any)', 'Visiteur::prodBySlug/$1');
 
 /*
  * --------------------------------------------------------------------

@@ -1,0 +1,53 @@
+CRITICAL - 2023-01-12 04:51:57 --> syntax error, unexpected token "public"
+#0 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\BTS SI...')
+#1 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#8 {main}
+CRITICAL - 2023-01-12 04:55:12 --> App\Controllers\Visiteur::prodById(): Argument #1 ($id) must be of type int, string given, called in C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php on line 824
+#0 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(824): App\Controllers\Visiteur->prodById('$1')
+#1 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#2 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#5 {main}
+CRITICAL - 2023-01-12 05:01:18 --> App\Controllers\Visiteur::prodById(): Argument #1 ($id) must be of type int, string given, called in C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php on line 824
+#0 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(824): App\Controllers\Visiteur->prodById('$1')
+#1 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#2 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#5 {main}
+CRITICAL - 2023-01-12 05:05:19 --> App\Controllers\Visiteur::prodById(): Argument #1 ($id) must be of type int, string given, called in C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php on line 824
+#0 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(824): App\Controllers\Visiteur->prodById('$1')
+#1 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#2 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#5 {main}
+CRITICAL - 2023-01-12 05:05:20 --> App\Controllers\Visiteur::prodById(): Argument #1 ($id) must be of type int, string given, called in C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php on line 824
+#0 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(824): App\Controllers\Visiteur->prodById('$1')
+#1 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#2 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#5 {main}
+CRITICAL - 2023-01-12 05:05:21 --> App\Controllers\Visiteur::prodById(): Argument #1 ($id) must be of type int, string given, called in C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php on line 824
+#0 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(824): App\Controllers\Visiteur->prodById('$1')
+#1 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#2 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#5 {main}
+CRITICAL - 2023-01-12 05:05:24 --> Undefined variable $data_bis
+#0 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\app\Controllers\Visiteur.php(440): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\BTS SI...', 440)
+#1 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(824): App\Controllers\Visiteur->prodBySlug('No_man_sky')
+#2 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#3 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
+#6 {main}
