@@ -51,3 +51,19 @@ CRITICAL - 2023-01-12 05:05:24 --> Undefined variable $data_bis
 #4 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\Users\BTS SIO\Documents\ReposExterieurs\PPEGames\ChopesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\BTS SI...')
 #6 {main}
+CRITICAL - 2023-01-12 09:55:48 --> Call to undefined method App\Models\ModeleProduit::retournerMarqueSlug
+#0 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\app\Controllers\Visiteur.php(432): CodeIgniter\Model->__call('retournerMarque...', Array)
+#1 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(824): App\Controllers\Visiteur->prodByIdBis(1)
+#2 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#3 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\romu\\O...')
+#6 {main}
+CRITICAL - 2023-01-12 10:00:39 --> Call to undefined method App\Models\ModeleProduit::retournerMarqueSlug
+#0 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\app\Controllers\Visiteur.php(432): CodeIgniter\Model->__call('retournerMarque...', Array)
+#1 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(824): App\Controllers\Visiteur->prodByIdBis(1)
+#2 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visiteur))
+#3 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\romu\\O...')
+#6 {main}

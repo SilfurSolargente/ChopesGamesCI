@@ -427,14 +427,15 @@ class Visiteur extends BaseController
             view('templates/footer');
         }
     }
-    public function prodById(int $id){
+    public function prodByIdBis(int $id){
         $modelProd = new ModeleProduit();
-        $slug= $modelProd->retournerSlug($id);
-    //redirection   
-        if ($slug != null){ 
-        return redirect()->to('jeux/'.$slug['NOMIMAGE']);
+        $slugMarq= $modelProd->retournerMarqueSlug($id);
+        if ($slugMarq != null) { 
+        return redirect()->to('game/'.$slugMarq['NOM'].'/'.$slugMarq['NOMIMAGE']);
+
         }
-    //else redirect 404 adaptée ?
+        else
+        echo $slugMarq;
       }
       
 public function prodBySlug($slug){

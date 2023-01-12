@@ -41,8 +41,9 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Visiteur::accueil');
-$routes->get('Visiteur/voir_un_produit/(:num)', 'Visiteur::prodById/$1');
-$routes->get('jeux/(:any)', 'Visiteur::prodBySlug/$1');
+$routes->get('Visiteur/voir_un_produit/(:num)', 'Visiteur::prodByIdBis/$1');
+// $routes->get('jeux/(:any)', 'Visiteur::prodBySlug/$1');
+$routes->get('game/(:any)/(:any)', 'Visiteur::prodBySlug/$2');
 
 /*
  * --------------------------------------------------------------------
