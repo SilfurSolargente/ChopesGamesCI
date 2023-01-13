@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="BinaryPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349567771" remote="133180890000000000" />
+<file name="BlacklistPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349577697" remote="133180890000000000" />
+<file name="CallablePlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349592557" remote="133180890000000000" />
+<file name="ClosurePlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349607440" remote="133180890000000000" />
+<file name="ColorPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349612399" remote="133180890000000000" />
+<file name="DepthLimitPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349622327" remote="133180890000000000" />
+<file name="DocstringPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349632234" remote="133180890000000000" />
+<file name="MicrotimePlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349642160" remote="133180890000000000" />
+<file name="ObjectPluginInterface.php" server="ftp.aspt1556.odns.fr" local="133155655349647121" remote="133180890000000000" />
+<file name="Plugin.php" server="ftp.aspt1556.odns.fr" local="133155655349657036" remote="133180890000000000" />
+<file name="PluginInterface.php" server="ftp.aspt1556.odns.fr" local="133155655349662006" remote="133180890000000000" />
+<file name="RecursionPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349671918" remote="133180890000000000" />
+<file name="SimpleXMLElementPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349676878" remote="133180890000000000" />
+<file name="SourcePlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349681837" remote="133180890000000000" />
+<file name="TablePlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349696718" remote="133180890000000000" />
+<file name="TabPluginInterface.php" server="ftp.aspt1556.odns.fr" local="133155655349691756" remote="133180890000000000" />
+<file name="TimestampPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349706641" remote="133180890000000000" />
+<file name="TraceFramePlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349716568" remote="133180890000000000" />
+</dwsync>

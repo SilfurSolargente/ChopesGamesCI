@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="CLIRequest.php" server="ftp.aspt1556.odns.fr" local="133155655347454800" remote="133180889400000000" />
+<file name="ContentSecurityPolicy.php" server="ftp.aspt1556.odns.fr" local="133155655347474661" remote="133180889400000000" />
+<file name="CURLRequest.php" server="ftp.aspt1556.odns.fr" local="133155655347464734" remote="133180889400000000" />
+<file name="DownloadResponse.php" server="ftp.aspt1556.odns.fr" local="133155655347489528" remote="133180889400000000" />
+<file name="Header.php" server="ftp.aspt1556.odns.fr" local="133155655347534171" remote="133180889400000000" />
+<file name="IncomingRequest.php" server="ftp.aspt1556.odns.fr" local="133155655347549058" remote="133180889400000000" />
+<file name="Message.php" server="ftp.aspt1556.odns.fr" local="133155655347558978" remote="133180889400000000" />
+<file name="MessageInterface.php" server="ftp.aspt1556.odns.fr" local="133155655347563935" remote="133180889400000000" />
+<file name="MessageTrait.php" server="ftp.aspt1556.odns.fr" local="133155655347573851" remote="133180889400000000" />
+<file name="Negotiate.php" server="ftp.aspt1556.odns.fr" local="133155655347578818" remote="133180889400000000" />
+<file name="RedirectResponse.php" server="ftp.aspt1556.odns.fr" local="133155655347588721" remote="133180889400000000" />
+<file name="Request.php" server="ftp.aspt1556.odns.fr" local="133155655347593697" remote="133180889400000000" />
+<file name="RequestInterface.php" server="ftp.aspt1556.odns.fr" local="133155655347598654" remote="133180889400000000" />
+<file name="RequestTrait.php" server="ftp.aspt1556.odns.fr" local="133155655347608573" remote="133180889400000000" />
+<file name="Response.php" server="ftp.aspt1556.odns.fr" local="133155655347618494" remote="133180889400000000" />
+<file name="ResponseInterface.php" server="ftp.aspt1556.odns.fr" local="133155655347638329" remote="133180889400000000" />
+<file name="ResponseTrait.php" server="ftp.aspt1556.odns.fr" local="133155655347643291" remote="133180889400000000" />
+<file name="URI.php" server="ftp.aspt1556.odns.fr" local="133155655347658172" remote="133180889400000000" />
+<file name="UserAgent.php" server="ftp.aspt1556.odns.fr" local="133155655347663136" remote="133180889400000000" />
+</dwsync>

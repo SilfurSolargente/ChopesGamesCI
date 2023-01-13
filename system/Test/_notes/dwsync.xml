@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="bootstrap.php" server="ftp.aspt1556.odns.fr" local="133155655349017199" remote="133180889400000000" />
+<file name="CIDatabaseTestCase.php" server="ftp.aspt1556.odns.fr" local="133155655348615441" remote="133180889400000000" />
+<file name="CIUnitTestCase.php" server="ftp.aspt1556.odns.fr" local="133155655348625358" remote="133180889400000000" />
+<file name="ControllerResponse.php" server="ftp.aspt1556.odns.fr" local="133155655348650161" remote="133180889400000000" />
+<file name="ControllerTester.php" server="ftp.aspt1556.odns.fr" local="133155655348665040" remote="133180889400000000" />
+<file name="ControllerTestTrait.php" server="ftp.aspt1556.odns.fr" local="133155655348655117" remote="133180889400000000" />
+<file name="DatabaseTestTrait.php" server="ftp.aspt1556.odns.fr" local="133155655348684880" remote="133180889400000000" />
+<file name="DOMParser.php" server="ftp.aspt1556.odns.fr" local="133155655348674961" remote="133180889400000000" />
+<file name="Fabricator.php" server="ftp.aspt1556.odns.fr" local="133155655348689852" remote="133180889400000000" />
+<file name="FeatureResponse.php" server="ftp.aspt1556.odns.fr" local="133155655348699767" remote="133180889400000000" />
+<file name="FeatureTestCase.php" server="ftp.aspt1556.odns.fr" local="133155655348704730" remote="133180889400000000" />
+<file name="FeatureTestTrait.php" server="ftp.aspt1556.odns.fr" local="133155655348719617" remote="133180889400000000" />
+<file name="FilterTestTrait.php" server="ftp.aspt1556.odns.fr" local="133155655348724572" remote="133180889400000000" />
+<file name="ReflectionHelper.php" server="ftp.aspt1556.odns.fr" local="133155655348982479" remote="133180890000000000" />
+<file name="TestLogger.php" server="ftp.aspt1556.odns.fr" local="133155655348997360" remote="133180890000000000" />
+<file name="TestResponse.php" server="ftp.aspt1556.odns.fr" local="133155655349012240" remote="133180890000000000" />
+</dwsync>

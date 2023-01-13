@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="BaseHandler.php" server="ftp.aspt1556.odns.fr" local="133155655345643847" remote="133180888800000000" />
+<file name="DummyHandler.php" server="ftp.aspt1556.odns.fr" local="133155655345653769" remote="133180888800000000" />
+<file name="FileHandler.php" server="ftp.aspt1556.odns.fr" local="133155655345663689" remote="133180888800000000" />
+<file name="MemcachedHandler.php" server="ftp.aspt1556.odns.fr" local="133155655345673605" remote="133180888800000000" />
+<file name="PredisHandler.php" server="ftp.aspt1556.odns.fr" local="133155655345678564" remote="133180888800000000" />
+<file name="RedisHandler.php" server="ftp.aspt1556.odns.fr" local="133155655345688485" remote="133180888800000000" />
+<file name="WincacheHandler.php" server="ftp.aspt1556.odns.fr" local="133155655345698422" remote="133180888800000000" />
+</dwsync>
