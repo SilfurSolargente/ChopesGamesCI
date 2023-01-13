@@ -14,7 +14,7 @@
 <div class="col-md-3 col-sm-6">
             <div class="product-grid">
                 <div class="product-image">
-                <a href="<?= base_url().'/index.php/Visiteur/voir_un_produit/'.$unProduit["NOPRODUIT"]?>">
+                <a href="<?= base_url('/Visiteur/voir_un_produit/'.$unProduit["NOPRODUIT"])?>">
                                    <?php  
                                    if(!empty($unProduit["NOMIMAGE"])) echo img_class($unProduit["NOMIMAGE"].'.jpg', $unProduit["LIBELLE"],'img-responsive image');
                                    else echo img_class('nonimage.jpg', $unProduit["LIBELLE"],'img-responsive image');
