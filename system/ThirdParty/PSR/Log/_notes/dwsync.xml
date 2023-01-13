@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AbstractLogger.php" server="ftp.aspt1556.odns.fr" local="133155655349924891" remote="133180890000000000" />
+<file name="InvalidArgumentException.php" server="ftp.aspt1556.odns.fr" local="133155655349929853" remote="133180890000000000" />
+<file name="LoggerAwareInterface.php" server="ftp.aspt1556.odns.fr" local="133155655349944727" remote="133180890000000000" />
+<file name="LoggerAwareTrait.php" server="ftp.aspt1556.odns.fr" local="133155655349954646" remote="133180890000000000" />
+<file name="LoggerInterface.php" server="ftp.aspt1556.odns.fr" local="133155655349964572" remote="133180890000000000" />
+<file name="LoggerTrait.php" server="ftp.aspt1556.odns.fr" local="133155655349969534" remote="133180890000000000" />
+<file name="LogLevel.php" server="ftp.aspt1556.odns.fr" local="133155655349934812" remote="133180890000000000" />
+<file name="NullLogger.php" server="ftp.aspt1556.odns.fr" local="133155655349984399" remote="133180890000000000" />
+</dwsync>

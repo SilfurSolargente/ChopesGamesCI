@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="ArrayObjectPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349275116" remote="133180890000000000" />
+<file name="Base64Plugin.php" server="ftp.aspt1556.odns.fr" local="133155655349280081" remote="133180890000000000" />
+<file name="BinaryPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349294951" remote="133180890000000000" />
+<file name="BlacklistPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349304873" remote="133180890000000000" />
+<file name="ClassMethodsPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349314800" remote="133180890000000000" />
+<file name="ClassStaticsPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349319754" remote="133180890000000000" />
+<file name="ClosurePlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349329682" remote="133180890000000000" />
+<file name="ColorPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349334638" remote="133180890000000000" />
+<file name="DateTimePlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349349519" remote="133180890000000000" />
+<file name="DOMDocumentPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349344557" remote="133180890000000000" />
+<file name="FsPathPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349359441" remote="133180890000000000" />
+<file name="IteratorPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349369359" remote="133180890000000000" />
+<file name="JsonPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349374318" remote="133180890000000000" />
+<file name="MicrotimePlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349384245" remote="133180890000000000" />
+<file name="MysqliPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349399129" remote="133180890000000000" />
+<file name="Parser.php" server="ftp.aspt1556.odns.fr" local="133155655349414002" remote="133180890000000000" />
+<file name="Plugin.php" server="ftp.aspt1556.odns.fr" local="133155655349418963" remote="133180890000000000" />
+<file name="ProxyPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349428890" remote="133180890000000000" />
+<file name="SerializePlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349438814" remote="133180890000000000" />
+<file name="SimpleXMLElementPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349448719" remote="133180890000000000" />
+<file name="SplFileInfoPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349453681" remote="133180890000000000" />
+<file name="SplObjectStoragePlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349463597" remote="133180890000000000" />
+<file name="StreamPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349468564" remote="133180890000000000" />
+<file name="TablePlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349478492" remote="133180890000000000" />
+<file name="ThrowablePlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349488397" remote="133180890000000000" />
+<file name="TimestampPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349498316" remote="133180890000000000" />
+<file name="ToStringPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349503281" remote="133180890000000000" />
+<file name="TracePlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349513195" remote="133180890000000000" />
+<file name="XmlPlugin.php" server="ftp.aspt1556.odns.fr" local="133155655349523132" remote="133180890000000000" />
+</dwsync>

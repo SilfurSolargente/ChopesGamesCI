@@ -62,11 +62,11 @@ ET PROBLEME AVEC IDENTIFIANT SITE SYSTEMATIQUE ! ! !
         //// Paramétrage des urls de redirection après paiement ////
 
         // $pbx_effectue = Page renvoyée si paiement accepté (voir ex. Annexe : accepte.php)
-        $pbx_effectue = site_url('Client/paiement_accepte');
+        $pbx_effectue = site_url('client/paiement_accepte');
         // $pbx_annule = Page renvoyée si paiement annulé, par le client (voir ex. Annexe : annule.php)
-        $pbx_annule = site_url('Client/paiement_annule');
+        $pbx_annule = site_url('client/paiement_annule');
         // $pbx_refuse = Page renvoyée si paiement refuse, par PayBox (voir ex. Annexe : refuse.php)
-        $pbx_refuse = site_url('Client/paiement_refuse');
+        $pbx_refuse = site_url('client/paiement_refuse');
 
 
         /* url de retour back office site : $pbx_repondre_a
@@ -175,7 +175,7 @@ ET PROBLEME AVEC IDENTIFIANT SITE SYSTEMATIQUE ! ! !
         $DonneesInjectees['categories'] = $modelCat->retourner_categories();
 
         return view('templates/header', $DonneesInjectees) .
-        view('Client/validation_commande') .
+        view('client/validation_commande') .
         view('templates/footer');
     }
 
@@ -529,7 +529,7 @@ ET PROBLEME AVEC IDENTIFIANT SITE SYSTEMATIQUE ! ! !
         $modelCat = new ModeleCategorie();
         $DonneesInjectees['categories'] = $modelCat->retourner_categories();
         return view('templates/header', $DonneesInjectees) .
-        view('Client/historique_des_commandes') .
+        view('client/historique_des_commandes') .
         view('templates/footer');
     }
 
@@ -545,7 +545,7 @@ ET PROBLEME AVEC IDENTIFIANT SITE SYSTEMATIQUE ! ! !
         $modelCat = new ModeleCategorie();
         $DonneesInjectees['categories'] = $modelCat->retourner_categories();
         return view('templates/header', $DonneesInjectees) .
-        view('Client/details_commande') .
+        view('client/details_commande') .
         view('templates/footer');
     }
 }

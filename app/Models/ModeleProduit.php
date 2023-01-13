@@ -58,7 +58,7 @@ class ModeleProduit extends Model
     }
     public function retournerMarqueSlug($id)
     {
-        return $this->select('NOM, NOMIMAGE')->where(['NOPRODUIT' => $id])->join('MARQUE', 'marque.nomarque = produit.nomarque')->first();
+        return $this->select('NOM, NOMIMAGE')->where(['NOPRODUIT' => $id])->join('marque', 'marque.nomarque = produit.nomarque')->first();
 
     }
 }
