@@ -1,0 +1,83 @@
+CRITICAL - 2023-05-27 11:24:32 --> Undefined constant "App\Controllers\this"
+#0 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_une_categorie()
+#1 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#2 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\romu\\O...')
+#5 {main}
+CRITICAL - 2023-05-27 11:26:14 --> Class "App\Controllers\ModeleAdministrateur" not found
+#0 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->modifier_supprimer_un_administrateur()
+#1 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#2 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\romu\\O...')
+#5 {main}
+CRITICAL - 2023-05-27 11:28:19 --> Undefined constant "App\Controllers\this"
+#0 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_une_categorie()
+#1 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#2 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\romu\\O...')
+#5 {main}
+CRITICAL - 2023-05-27 11:29:03 --> Undefined constant "App\Controllers\this"
+#0 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_une_categorie()
+#1 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#2 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\romu\\O...')
+#5 {main}
+CRITICAL - 2023-05-27 11:31:31 --> Call to undefined function App\Controllers\viex()
+#0 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_une_categorie()
+#1 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#2 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\romu\\O...')
+#5 {main}
+CRITICAL - 2023-05-27 11:31:50 --> Undefined constant "App\Controllers\AdministrateurSuper"
+#0 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_une_categorie()
+#1 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#2 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\romu\\O...')
+#5 {main}
+CRITICAL - 2023-05-27 11:34:24 --> Undefined variable $modelCate
+#0 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\app\Controllers\AdministrateurSuper.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\romu\\O...', 255)
+#1 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_une_categorie()
+#2 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#3 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\romu\\O...')
+#6 {main}
+CRITICAL - 2023-05-27 11:35:35 --> Allowed fields must be specified for model: App\Models\ModeleCategorie
+#0 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Mode...')
+#1 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\app\Controllers\AdministrateurSuper.php(255): CodeIgniter\Model->insert(Array)
+#4 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_une_categorie()
+#5 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#6 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\romu\\O...')
+#9 {main}
+CRITICAL - 2023-05-27 11:35:50 --> Allowed fields must be specified for model: App\Models\ModeleCategorie
+#0 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Mode...')
+#1 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\app\Controllers\AdministrateurSuper.php(255): CodeIgniter\Model->insert(Array)
+#4 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_une_categorie()
+#5 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#6 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\romu\\O...')
+#9 {main}
+CRITICAL - 2023-05-27 11:36:24 --> Allowed fields must be specified for model: App\Models\ModeleMarque
+#0 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Mode...')
+#1 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\app\Controllers\AdministrateurSuper.php(294): CodeIgniter\Model->insert(Array)
+#4 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(824): App\Controllers\AdministrateurSuper->ajouter_une_marque()
+#5 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdministrateurSuper))
+#6 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\romu\OneDrive\Documents\Repositories\ChoppesGames\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\romu\\O...')
+#9 {main}

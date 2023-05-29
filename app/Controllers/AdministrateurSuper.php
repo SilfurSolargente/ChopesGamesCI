@@ -4,6 +4,7 @@ use App\Models\ModeleProduit;
 use App\Models\ModeleCategorie;
 use App\Models\ModeleIdentifiant;
 use App\Models\ModeleMarque;
+use App\Models\ModeleAdministrateur;
 
 helper(['url', 'assets', 'form']);
 
@@ -185,7 +186,7 @@ class AdministrateurSuper extends BaseController
         $modelIdent = new ModeleIdentifiant();
         $data['identifiant'] = $modelIdent->retourner_identifiant();
 
-        $rules = [ //régles de validation creation
+        $rules = [ //régles de validation création
             'txtSite' => 'required',
             'txtRang' => 'required',
             'txtIdentifiant' => 'required',
@@ -216,5 +217,191 @@ class AdministrateurSuper extends BaseController
             $modelIdent->update(1, $donneesAInserer);
             return redirect()->to('visiteur/lister_les_produits');
         }
+    }
+
+    public function ajouter_une_categorie()
+    {
+        $session = session();
+        if ($session->get('statut') != 3) //Si l'utilisateur n'est pas un super admin, il est renvoyé à la page d'acceuil
+        {
+            return redirect()->to('visiteur/acceuil');
+        }
+        helper(['form']);
+        $modeleCat = new ModeleCategorie();
+        $data['categories'] = $modeleCat->retourner_categories();
+        $data['TitreDeLaPage'] = 'Ajouter une catégorie';
+        $rules = [
+            'txtCategorie' => 'required',
+        ]; // Création du formulaire avec une règle : Le champs doit être rempli.
+        if (!$this->validate($rules))
+        {
+            if ($_POST)
+            {
+                $data['TitreDeLaPage'] = 'Corriger votre formulaire'; // Si le champs n'était pas rempli, rechargement de la page avec titre modifié.
+            }
+            else 
+            {
+                $data['TitreDeLaPage'] = 'Ajouter une catégorie';
+            }
+            Return view('templates/header', $data).
+            view('AdministrateurSuper/ajouter_une_categorie').
+            view('templates/footer');
+        }
+        else
+        {
+            $donneesAInserer = array(
+                'LIBELLE' => $this->request->getPost('txtCategorie'), // Récupération du texte mis dans le champs
+            );
+            $modeleCat->insert($donneesAInserer);  // Insertion de la nouvelle catégorie saisie.
+            return redirect()->to('visiteur/lister_les_produits');
+        }
+    }
+
+    public function ajouter_une_marque()
+    {
+        $session = session();
+        if ($session->get('statut') != 3) //Si l'utilisateur n'est pas un super admin, il est renvoyé à la page d'acceuil
+        {
+            return redirect()->to('visiteur/acceuil');
+        }
+        helper(['form']);
+        $modeleCat = new ModeleCategorie();
+        $modeleMarque = new ModeleMarque();
+        $data['categories'] = $modeleCat->retourner_categories();
+        $data['TitreDeLaPage'] = 'Ajouter une marque';
+        $rules = [
+            'txtMarque' => 'required',
+        ]; // Création du formulaire avec une règle : Le champs doit être rempli.
+        if (!$this->validate($rules))
+        {
+            if ($_POST)
+            {
+                $data['TitreDeLaPage'] = 'Corriger votre formulaire'; // Si le champs n'était pas rempli, rechargement de la page avec titre modifié
+            }
+            else
+            {
+                    $data['TitreDeLaPage'] = 'Ajouter une marque';
+            }
+            Return view('templates/header', $data).
+            view('AdministrateurSuper/ajouter_une_marque').
+            view('templates/footer');
+        }
+        else
+        {
+            $donneesAInserer = array(
+                'NOM' => $this->request->getPost('txtMarque'), // Récupération de la saisie
+            );
+            $modeleMarque->insert($donneesAInserer);  // Insertion de la saisie pour créer une nouvelle marque.
+            return redirect()->to('visiteur/lister_les_produits');
+        }
+    }
+
+    public function ajouter_un_administrateur()
+    {
+        
+        $session = session();
+        if ($session->get('statut') != 3) //Si l'utilisateur n'est pas un super admin, il est renvoyé à la page d'acceuil
+        {
+            return redirect()->to('visiteur/accueil');
+        }     
+        helper(['form']);
+        $validation =  \Config\Services::validation();
+        $modeleAdm = new ModeleAdministrateur();
+        $modeleCat = new ModeleCategorie();
+        $data['AdmEmp'] = $modeleAdm->retourner_administrateurs_employes();
+        $data['categories'] = $modeleCat->retourner_categories();
+        $data['TitreDeLaPage'] = 'Ajouter un administrateur';
+
+        $rules = [ //régles de validation creation
+            'Identifiant' => 'required',
+            'Mdp' => 'required',
+            'Email' => 'required|valid_email',
+        ];
+        $messages = [ //message à renvoyer en cas de non respect des règles de validation
+            'Email' => [
+                'required' => 'Aucune Adresse mail renseignée',
+                'valid_email' => 'Format d\'adresse email incorrect',
+            ],
+            'Mdp'    => [
+                'required' => 'Mot de passe non renseigné',
+            ],
+            'Identifiant'    => [
+                'required' => 'Email non renseigné',
+            ]
+
+        ];
+        if (isset($_POST['btnValidate']))
+        {
+            $val = $_POST['btnValidate'];
+        }   
+        if (!$this->validate($rules , $messages))
+        {
+            if ($_POST)
+            {
+                $data['TitreDeLaPage'] = 'Corriger votre ajout';
+            }
+            else
+            {
+                    $data['TitreDeLaPage'] = 'Ajouter un administrateur';
+            }
+        Return view('templates/header', $data).
+        view('AdministrateurSuper/ajouter_un_administrateur').
+        view('templates/footer');
+        }
+        else
+        { 
+            if ($val === 'Modifier')
+            {
+                $idEmp = $this->request->getPost('IdentifiantEmp'); // Récupération de l'ID de l'employé voulu
+                $donneesAUpdate = array(
+                    'IDENTIFIANT' => $this->request->getPost('Identifiant'),
+                    'EMAIL' => $this->request->getPost('Email'),
+                    'MOTDEPASSE' => $this->request->getPost('Mdp'), // Récupération des modifications saisies
+                );
+                $modeleAdm->update($idEmp, $donneesAUpdate); // Mise à jour dans la base de données
+            }
+            else // Dans le cas ou aucun employé n'est selectionné
+            {
+                $donneesAInserer = array(
+                    'IDENTIFIANT' => $this->request->getPost('Identifiant'),
+                    'EMAIL' => $this->request->getPost('Email'),
+                    'PROFIL' => 'Employé',
+                    'MOTDEPASSE' => $this->request->getPost('Mdp'),
+                );
+                $modeleAdm->insert($donneesAInserer);  // Création d'un nouvel employé dans la base de données par insertion
+            }
+            return redirect()->to('visiteur/lister_les_produits');
+        }
+    }
+
+    public function modifier_supprimer_un_administrateur()
+    {
+        $session = session();
+        if ($session->get('statut') != 3) //Si l'utilisateur n'est pas un super admin, il est renvoyé à la page d'acceuil
+        {
+            return redirect()->to('visiteur/accueil');
+        }   
+        helper(['form']);
+        $modeleAdm = new ModeleAdministrateur();
+        $modeleCat = new ModeleCategorie();
+        $data['AdmEmp'] = $modeleAdm->retourner_administrateurs_employes();
+        $data['categories'] = $modeleCat->retourner_categories();
+        $data['TitreDeLaPage'] = 'Ajouter un administrateur';
+        if (isset($_POST['btnModif'])) // Si le bouton modifié est cliqué
+        {
+            $Employe = $modeleAdm->retourner_administrateur_par_id( $this->request->getPost('idEmp'));
+            $data['txtIdentifiant'] = $Employe['IDENTIFIANT'];
+            $data['txtEmail'] = $Employe['EMAIL'];
+            $data['TitreDeLaPage'] = 'Modifier un administrateur';
+            $data['txtBtn'] = 'Modifier'; // Récupération des informations de l'employé à modifier
+        }
+        if (isset($_POST['btnSup'])) //Si le bouton supprimé est cliqué
+        {
+            $modeleAdm->delete($this->request->getPost('idEmp')); //Suppression de l'administrateur dans la base de données
+            $data['AdmEmp'] = $modeleAdm->retourner_administrateurs_employes();
+        }
+        Return view('templates/header', $data).
+        view('AdministrateurSuper/ajouter_un_administrateur').
+        view('templates/footer');
     }
 }
